@@ -146,7 +146,7 @@ end
 
 def staging_hostname
   @staging_hostname ||=
-    ask_with_default("Staging hostname?", :blue, "staging.example.com")
+    ask_with_default("Staging hostname?", :blue, "staging.#{@production_hostname}")
 end
 
 def gemfile_requirement(name)
