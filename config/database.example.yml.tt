@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 
-default:
+default: &default
   adapter: postgresql
   encoding: unicode
   host: <%= ENV["DB_HOST"] || 'localhost' %>
